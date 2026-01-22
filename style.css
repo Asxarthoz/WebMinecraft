@@ -1,0 +1,268 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.column1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/mcLaptop.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
+}
+
+.container1 {
+    
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 55px;
+    border-radius: 11px;
+    gap: 18px;
+}
+
+.column2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    background-image: linear-gradient(to top, rgb(29, 28, 28),rgb(29, 28, 28),rgb(29, 28, 28),rgb(29, 28, 28),  #36045c);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 50px;
+
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+    background-color: #36045c;
+    border-radius: 17px;
+}
+
+.column3container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.column3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    background-image: radial-gradient(circle,   #36045c, rgb(29, 28, 28));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 50px;
+
+}
+
+.carousel {
+    width: 420px;     
+    overflow: hidden;  
+    position: relative;
+    margin: 0 auto;
+}
+
+.track {
+    display: flex;
+    transition: transform 0.5s ease; /* 🔥 ANIMASI */
+}
+
+.container3 {
+    min-width: 420px;
+    background-color: #2a0944;
+    border-radius: 17px;
+    padding: 25px;
+    box-sizing: border-box;
+    
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px 12px;
+    z-index: 10;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+.column4 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/mc2.png);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 50px;
+
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 35px;
+    padding: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: #36045c;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+#jelajahB {
+    background-color: #5b1a8d;
+    width: 120px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid black;         
+    box-shadow: none;      
+    outline: none;
+}
+
+#jelajahB:hover {
+    background-color:black;
+    color: #5b1a8d;
+    border: 2px solid #5b1a8d;         
+
+}
+
+#economyImg {
+    width: 200px;
+    height: auto;
+}
+
+#gambar {
+    width: 300px;
+    height: auto;
+}
+
+@media (max-width:1000px) {
+    
+#treptiumImg {
+    width: 100%;
+    height: auto;
+}
+
+.column1 {
+    background-image: url(img/mcHp.png);
+    background-size: cover;        /* ⭐ PALING PENTING */
+    background-position: center;   /* ⭐ BIAR PAS */
+}
+
+.column2 {
+    flex-direction: column;
+    position: relative;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 240px;
+    font-size: 11px;
+    background-color: #36045c;
+    border-radius: 17px;
+}
+
+.column4 {
+    background-image: url(img/mc2hp.png);
+    background-size: cover;        /* ⭐ PALING PENTING */
+    background-position: center;   /* ⭐ BIAR PAS */
+}
+
+.container4 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#imgModel {
+    position: absolute;
+    top: 73%;    /* Jarak dari atas kontainer */
+    right: 63%;  /* Jarak dari kanan kontainer */
+    width: 170px;  /* Ukuran gambar */
+    height: auto;
+}
+
+#gambar {
+    width: 100px;
+}
+
+#h4 {
+    font-size: 20px;
+}
+
+}
+

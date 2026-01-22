@@ -1,0 +1,22 @@
+const track = document.querySelector(".track");
+const slides = document.querySelectorAll(".container3");
+
+let index = 0;
+
+function updateSlide() {
+    const slideWidth = slides[0].offsetWidth; // ⭐ ukuran ASLI
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+
+document.querySelector(".next").addEventListener("click", () => {
+    index++;
+    if (index >= slides.length) index = 0;
+    updateSlide();
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+    index--;
+    if (index < 0) index = slides.length - 1;
+    updateSlide();
+});
