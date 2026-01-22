@@ -94,7 +94,7 @@ body{
 
 .track {
     display: flex;
-    transition: transform 0.5s ease; /* 🔥 ANIMASI */
+    transition: transform 0.5s ease; 
 }
 
 .container3 {
@@ -199,6 +199,17 @@ body{
     height: auto;
 }
 
+#imgModel {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.8s ease;
+}
+
+#imgModel.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media (max-width:1000px) {
     
 #treptiumImg {
@@ -208,8 +219,8 @@ body{
 
 .column1 {
     background-image: url(img/mcHp.png);
-    background-size: cover;        /* ⭐ PALING PENTING */
-    background-position: center;   /* ⭐ BIAR PAS */
+    background-size: cover;       
+    background-position: center;   
 }
 
 .column2 {
@@ -231,8 +242,8 @@ body{
 
 .column4 {
     background-image: url(img/mc2hp.png);
-    background-size: cover;        /* ⭐ PALING PENTING */
-    background-position: center;   /* ⭐ BIAR PAS */
+    background-size: cover;       
+    background-position: center;  
 }
 
 .container4 {
@@ -250,10 +261,11 @@ body{
 
 #imgModel {
     position: absolute;
-    top: 73%;    /* Jarak dari atas kontainer */
-    right: 63%;  /* Jarak dari kanan kontainer */
-    width: 170px;  /* Ukuran gambar */
+    top: 73%;  
+    right: 63%;  
+    width: 170px;  
     height: auto;
+
 }
 
 #gambar {

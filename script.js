@@ -20,3 +20,21 @@ document.querySelector(".prev").addEventListener("click", () => {
     if (index < 0) index = slides.length - 1;
     updateSlide();
 });
+
+const imgModel = document.querySelector("#imgModel");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                imgModel.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.3 // muncul saat 30% terlihat
+    }
+);
+
+observer.observe(imgModel);
+
