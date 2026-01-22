@@ -194,9 +194,10 @@ body{
     height: auto;
 }
 
-#gambar {
+.gambar {
     width: 300px;
     height: auto;
+    border-radius: 23px;
 }
 
 #imgModel {
@@ -268,7 +269,7 @@ body{
 
 }
 
-#gambar {
+.gambar {
     width: 100px;
 }
 

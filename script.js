@@ -38,3 +38,6 @@ const observer = new IntersectionObserver(
 
 observer.observe(imgModel);
 
+document.getElementById("jelajahB").onclick = function() {
+    document.getElementById("column2").scrollIntoView({ behavior: "smooth" });
+  };
