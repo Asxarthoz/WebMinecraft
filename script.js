@@ -32,7 +32,7 @@ const observer = new IntersectionObserver(
         });
     },
     {
-        threshold: 0.3 // muncul saat 30% terlihat
+        threshold: 0.3
     }
 );
 
@@ -42,20 +42,23 @@ document.getElementById("jelajahB").onclick = function() {
     document.getElementById("column2").scrollIntoView({ behavior: "smooth" });
   };
 
-document.body.classList.add("loading");
+const loader = document.getElementById("loading");
 
-window.addEventListener("load", () => {
-    const loader = document.getElementById("loading");
+let finished = false;
 
-    setTimeout(() => {
-        loader.style.opacity = "0";
-        loader.style.pointerEvents = "none";
+function endLoading() {
+    if (finished) return;
+    finished = true;
 
-        document.body.classList.remove("loading");
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
 
-        setTimeout(() => {
-            loader.remove();
-        }, 500);
-    }, 300); 
-});
+    setTimeout(() => loader.remove(), 500);
+}
+
+setTimeout(endLoading, 5000);
+
+window.addEventListener("load", endLoading);
+
+
 
