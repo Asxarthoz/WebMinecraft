@@ -373,5 +373,17 @@ body.loading {
     font-size: 20px;
 }
 
+@media (max-width:500px) {
+    #teksJudul {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:350px) {
+    #teksJudul {
+        font-size: 15px;
+    }
+}
+
 }
 
