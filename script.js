@@ -41,3 +41,21 @@ observer.observe(imgModel);
 document.getElementById("jelajahB").onclick = function() {
     document.getElementById("column2").scrollIntoView({ behavior: "smooth" });
   };
+
+document.body.classList.add("loading");
+
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loading");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.pointerEvents = "none";
+
+        document.body.classList.remove("loading");
+
+        setTimeout(() => {
+            loader.remove();
+        }, 500);
+    }, 300); 
+});
+
